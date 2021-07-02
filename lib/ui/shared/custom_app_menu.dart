@@ -53,6 +53,12 @@ class _TabletDesktopMenu extends StatelessWidget {
             onPress: () =>
                 locator<NavigationService>().navigateTo('/stateful/100'),
           ),
+          CustomFlatButton(
+            text: 'Provider 200',
+            //onPress: () => Navigator.pushNamed(context, '/ruta-no-existente'),
+            onPress: () =>
+                locator<NavigationService>().navigateTo('/provider?q=200'),
+          ),
         ],
       ),
     );
