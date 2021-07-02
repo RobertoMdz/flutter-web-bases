@@ -12,9 +12,9 @@ class Page404View extends StatelessWidget {
         children: [
           Text('Pagina 404'),
           CustomFlatButton(
-              text: 'Regresar',
-              onPress: () =>
-                  Navigator.pushReplacementNamed(context, '/stateful'))
+            text: 'Regresar',
+            onPress: () => Navigator.pushNamed(context, '/stateful'),
+          )
         ],
       ),
     );
